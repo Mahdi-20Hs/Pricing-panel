@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400&display=swap');
+*{
+  padding: 0;
+  margin:0;
+  box-sizing:border-box;
+  font-family: 'Cairo', sans-serif;
+}
+body{
+  min-height: 100vh;
+  background-color: #60a9ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel{
+  background-color: white;
+  width: 100%;
+  max-width: 960px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.plan{
+  border-bottom: 1px solid gray;
+}
+.plan:last-child{
+  border-bottom: none;
+}
+.plan img{
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.header{
+  color: #888;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.price{
+  margin-top: 25px;
+  color: #016ff9;
+  font-size: 32px;
+  font-weight: 700;
+}
+.feature{
+  padding: 15px 0;
+  color: #016ff9;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  border-top: 1px solid #e1f1ff;
+}
+.feature:nth-of-type(2){
+  border-bottom: 1px solid #e1f1ff;
+}
+.sign-up, .free-trial{
+  background-color: transparent;
+  cursor: pointer;
+  padding: 6px 30px;
+  border: 1px solid #016ff9;
+  color: #016ff9;
+  border-radius: 0.5em;
+  transition: all 0.3s;
+  margin: 20px;
+}
+.sign-up:hover{
+  color:white;
+  background-color: #016ff9;
+}
+.free-trial{
+  background-color: #016ff9;
+  color: white;
+}
+.free-trial:hover{
+  background-color: white;
+  color: #016ff9;
+}
+@media(min-width: 900px){
+  .panel{
+    flex-direction: row;
+    border-radius: 0.5em;
+  }
+  .plan{
+    border: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .plan:last-child{
+    border-right: none;
+  }
+  .header{
+    margin-bottom: 25px;
+  }
+  .price, .panel img{
+    margin-top: 12.5px;
+  }
+  .sign-up, .free-trial{
+    margin: 10px;
+  }
+}
